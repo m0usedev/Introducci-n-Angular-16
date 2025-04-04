@@ -1,1 +1,17 @@
-<p>product-list works!</p>
+<div class="product-list-c">
+
+  <h2 style="color: gray;">Products</h2>
+
+  <div *ngFor="let product of products">
+
+    <a [title]="product.name + ' details'" style="color: blue;">
+      <h3>{{product.name}}</h3>
+    </a>
+
+    <p *ngIf="product.description">
+      Descriprion: {{product.description}}
+    </p>
+
+  </div>
+
+</div>
