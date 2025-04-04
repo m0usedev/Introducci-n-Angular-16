@@ -1,0 +1,15 @@
+.top-bar-c {
+  background-color: blue;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  button {
+    color: blue;
+    height: fit-content;
+    padding: 10px;
+  }
+}
