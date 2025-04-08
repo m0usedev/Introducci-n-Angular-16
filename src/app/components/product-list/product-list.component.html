@@ -6,7 +6,9 @@
 
     <div class="title">
 
-      <a [title]="product.name + ' details'" style="color: blue;">
+      <a
+        [title]="product.name + ' details'"
+        [routerLink]="['/products', product.id]">
         <h3>{{product.name}}</h3>
       </a>
 
@@ -24,7 +26,10 @@
       Share
     </button>
 
-    <app-product-alerts [product]="product" (notify)="onNotify($event)"></app-product-alerts>
+    <app-product-alerts
+      [product]="product"
+      (notify)="onNotify($event)">
+    </app-product-alerts>
 
   </div>
 
