@@ -1,1 +1,7 @@
-<p>product-alerts works!</p>
+<div class="product-alert-c">
+  <div *ngIf="product && product.price > 700">
+    <button type="button" (click)="notify.emit('Se le notificará cuando el producto salga a la venta')">
+      Notify Me
+    </button>
+  </div>
+</div>
