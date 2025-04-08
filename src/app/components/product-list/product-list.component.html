@@ -2,15 +2,29 @@
 
   <h2 style="color: gray;">Products</h2>
 
-  <div *ngFor="let product of products">
+  <div class="product" *ngFor="let product of products">
 
-    <a [title]="product.name + ' details'" style="color: blue;">
-      <h3>{{product.name}}</h3>
-    </a>
+    <div class="title">
+
+      <a [title]="product.name + ' details'" style="color: blue;">
+        <h3>{{product.name}}</h3>
+      </a>
+
+      <span>
+        {{product.price}} $
+      </span>
+
+    </div>
 
     <p *ngIf="product.description">
       Descriprion: {{product.description}}
     </p>
+
+    <button type="button" (click)="share()">
+      Share
+    </button>
+
+    <app-product-alerts [product]="product" (notify)="onNotify($event)"></app-product-alerts>
 
   </div>
 

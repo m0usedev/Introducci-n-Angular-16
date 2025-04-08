@@ -7,4 +7,12 @@ import { products, Product } from 'src/app/products';
 })
 export class ProductListComponent {
   public products : Product[] = products;
+
+  share() : void {
+    window.alert("¡El producto ha sido compartido!");
+  }
+
+  onNotify(str: string) {
+    window.alert(str);
+  }
 }
