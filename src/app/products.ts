@@ -11,11 +11,11 @@ export let products : Product[] = [
   },
   {
     name : "Phone Mini",
-    price : 10
+    price : 300
   },
   {
     name : "Phone Standar",
     description : "Esto es una descripcion de Phone Standar",
-    price : 10
+    price : 800
   },
 ];
