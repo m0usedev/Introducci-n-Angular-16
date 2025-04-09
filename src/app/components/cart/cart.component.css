@@ -8,4 +8,29 @@
     color: rgb(72, 72, 72);
     padding: 10px;
   }
+
+  .cart-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 5px;
+    width: 150px;
+
+    .form-element {
+      display: flex;
+      flex-direction: column;
+    }
+
+    button {
+      background-color: blue;
+      color: white;
+      border: none;
+      width: fit-content;
+      padding: 10px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
 }
