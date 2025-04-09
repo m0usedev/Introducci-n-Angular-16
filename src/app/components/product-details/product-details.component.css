@@ -1,0 +1,14 @@
+.product-details-c {
+  .product-card {
+    button {
+      color: white;
+      background-color: blue;
+      border: none;
+      padding: 10px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
