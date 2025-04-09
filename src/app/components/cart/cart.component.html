@@ -1,0 +1,14 @@
+<div class="cart-c">
+  <h3>Cart</h3>
+
+  <p>
+    <a routerLink="/shipping">
+      Shiping Price
+    </a>
+  </p>
+
+  <div class="cart-item" *ngFor="let item of items">
+    <span>{{ item.name }}</span>
+    <span>{{ item.price | currency }}</span>
+  </div>
+</div>
