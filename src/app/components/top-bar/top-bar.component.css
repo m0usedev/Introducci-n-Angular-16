@@ -8,6 +8,9 @@
   padding: 10px;
 
   a {
+    color: white;
+    text-decoration: none;
+
     button {
       color: blue;
       height: fit-content;
